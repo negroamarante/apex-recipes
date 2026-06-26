@@ -1,61 +1,261 @@
-# ProductZoningServiceTest
+# ProductZoningServiceTest Class
 
 `ISTEST`
+
 ## Fields
+### `ZONED_PRODUCT_CODE`
 
-### `private ALT_COUNTRY_CODE` → `String`
+#### Signature
+```apex
+private static final ZONED_PRODUCT_CODE
+```
 
-
-### `private UNMAPPED_COUNTRY_CODE` → `String`
-
-
-### `private UNZONED_PRODUCT_CODE` → `String`
-
-
-### `private UNZONED_PRODUCT_FAMILY` → `String`
-
-
-### `private US_COUNTRY_CODE` → `String`
-
-
-### `private ZONED_PRODUCT_CODE` → `String`
-
-
-### `private ZONED_PRODUCT_FAMILY` → `String`
-
+#### Type
+String
 
 ---
+
+### `UNZONED_PRODUCT_CODE`
+
+#### Signature
+```apex
+private static final UNZONED_PRODUCT_CODE
+```
+
+#### Type
+String
+
+---
+
+### `ZONED_PRODUCT_FAMILY`
+
+#### Signature
+```apex
+private static final ZONED_PRODUCT_FAMILY
+```
+
+#### Type
+String
+
+---
+
+### `UNZONED_PRODUCT_FAMILY`
+
+#### Signature
+```apex
+private static final UNZONED_PRODUCT_FAMILY
+```
+
+#### Type
+String
+
+---
+
+### `US_COUNTRY_CODE`
+
+#### Signature
+```apex
+private static final US_COUNTRY_CODE
+```
+
+#### Type
+String
+
+---
+
+### `ALT_COUNTRY_CODE`
+
+#### Signature
+```apex
+private static final ALT_COUNTRY_CODE
+```
+
+#### Type
+String
+
+---
+
+### `UNMAPPED_COUNTRY_CODE`
+
+#### Signature
+```apex
+private static final UNMAPPED_COUNTRY_CODE
+```
+
+#### Type
+String
+
 ## Methods
-### `private static void setupTestData()`
+### `setupTestData()`
 
 `TESTSETUP`
-### `private static void setRestContext(String countryCode, String productCode)`
-### `private static String getExpectedFlyZone(String countryCode, String productFamily)`
-### `private static void getProductZoning_whenValidProductAndCountry_returnsPermissibleFlyZone()`
 
-`ISTEST`
-### `private static void getProductZoning_whenValidProductAndDifferentCountry_returnsMatchingFlyZone()`
+#### Signature
+```apex
+private static void setupTestData()
+```
 
-`ISTEST`
-### `private static void getProductZoning_whenCountryCodeHeaderMissing_defaultsToUsAndReturnsFlyZone()`
+#### Return Type
+**void**
 
-`ISTEST`
-### `private static void getProductZoning_whenCountryCodeHeaderBlank_defaultsToUsAndReturnsFlyZone()`
-
-`ISTEST`
-### `private static void getProductZoning_whenCountryHasNoRegulationsForProductFamily_returnsLocalAuthoritiesMessage()`
-
-`ISTEST`
-### `private static void getProductZoning_whenCountryHasNoMapping_returnsLocalAuthoritiesMessage()`
-
-`ISTEST`
-### `private static void getProductZoning_whenProductCodeIsNull_returnsMissingProductCodeMessage()`
-
-`ISTEST`
-### `private static void getProductZoning_whenProductCodeIsBlank_returnsMissingProductCodeMessage()`
-
-`ISTEST`
-### `private static void getProductZoning_whenProductCodeDoesNotExist_returnsMissingProductCodeMessage()`
-
-`ISTEST`
 ---
+
+### `setRestContext(countryCode, productCode)`
+
+#### Signature
+```apex
+private static void setRestContext(String countryCode, String productCode)
+```
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| countryCode | String |  |
+| productCode | String |  |
+
+#### Return Type
+**void**
+
+---
+
+### `getExpectedFlyZone(countryCode, productFamily)`
+
+#### Signature
+```apex
+private static String getExpectedFlyZone(String countryCode, String productFamily)
+```
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| countryCode | String |  |
+| productFamily | String |  |
+
+#### Return Type
+**String**
+
+---
+
+### `getProductZoning_whenValidProductAndCountry_returnsPermissibleFlyZone()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void getProductZoning_whenValidProductAndCountry_returnsPermissibleFlyZone()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `getProductZoning_whenValidProductAndDifferentCountry_returnsMatchingFlyZone()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void getProductZoning_whenValidProductAndDifferentCountry_returnsMatchingFlyZone()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `getProductZoning_whenCountryCodeHeaderMissing_defaultsToUsAndReturnsFlyZone()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void getProductZoning_whenCountryCodeHeaderMissing_defaultsToUsAndReturnsFlyZone()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `getProductZoning_whenCountryCodeHeaderBlank_defaultsToUsAndReturnsFlyZone()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void getProductZoning_whenCountryCodeHeaderBlank_defaultsToUsAndReturnsFlyZone()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `getProductZoning_whenCountryHasNoRegulationsForProductFamily_returnsLocalAuthoritiesMessage()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void getProductZoning_whenCountryHasNoRegulationsForProductFamily_returnsLocalAuthoritiesMessage()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `getProductZoning_whenCountryHasNoMapping_returnsLocalAuthoritiesMessage()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void getProductZoning_whenCountryHasNoMapping_returnsLocalAuthoritiesMessage()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `getProductZoning_whenProductCodeIsNull_returnsMissingProductCodeMessage()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void getProductZoning_whenProductCodeIsNull_returnsMissingProductCodeMessage()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `getProductZoning_whenProductCodeIsBlank_returnsMissingProductCodeMessage()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void getProductZoning_whenProductCodeIsBlank_returnsMissingProductCodeMessage()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `getProductZoning_whenProductCodeDoesNotExist_returnsMissingProductCodeMessage()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void getProductZoning_whenProductCodeDoesNotExist_returnsMissingProductCodeMessage()
+```
+
+#### Return Type
+**void**

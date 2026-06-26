@@ -1,23 +1,57 @@
-# ProductZoningService
+# ProductZoningService Class
 
 `RESTRESOURCE`
+
 ## Fields
+### `DEFAULT_COUNTRY_CODE`
 
-### `private CONFIRM_WITH_LOCAL_AUTHORITIES_MESSAGE` → `String`
+`TESTVISIBLE`
 
-`TESTVISIBLE` 
+#### Signature
+```apex
+private static final DEFAULT_COUNTRY_CODE
+```
 
-### `private DEFAULT_COUNTRY_CODE` → `String`
-
-`TESTVISIBLE` 
-
-### `private MISSING_PRODUCT_CODE_MESSAGE` → `String`
-
-`TESTVISIBLE` 
+#### Type
+String
 
 ---
+
+### `MISSING_PRODUCT_CODE_MESSAGE`
+
+`TESTVISIBLE`
+
+#### Signature
+```apex
+private static final MISSING_PRODUCT_CODE_MESSAGE
+```
+
+#### Type
+String
+
+---
+
+### `CONFIRM_WITH_LOCAL_AUTHORITIES_MESSAGE`
+
+`TESTVISIBLE`
+
+#### Signature
+```apex
+private static final CONFIRM_WITH_LOCAL_AUTHORITIES_MESSAGE
+```
+
+#### Type
+String
+
 ## Methods
-### `global static String getProductZoning()`
+### `getProductZoning()`
 
 `HTTPGET`
----
+
+#### Signature
+```apex
+global static String getProductZoning()
+```
+
+#### Return Type
+**String**

@@ -5,12 +5,11 @@
  *
  */
 public with sharing class QuiddityRecipes {
-    /**
-     * @description demonstrates the code needed to get the current requests
-     * Quiddity value.
-     * @return System.Quiddity
-     */
-    public static Quiddity demonstrateGetQuiddity() {
-        return Request.getCurrent().getQuiddity();
-    }
+  /**
+   * @description demonstrates the code needed to get the current requests
+   * Quiddity value.
+   */
+  public static Quiddity demonstrateGetQuiddity() {
+    return Request.getCurrent().getQuiddity();
+  }
 }

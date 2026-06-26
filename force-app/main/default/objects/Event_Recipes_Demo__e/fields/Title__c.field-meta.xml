@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>url__c</fullName>
-    <description>This field holds the image url to be added.</description>
+    <fullName>Title__c</fullName>
     <externalId>false</externalId>
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>url</label>
+    <label>Title</label>
     <length>255</length>
     <required>true</required>
     <type>Text</type>

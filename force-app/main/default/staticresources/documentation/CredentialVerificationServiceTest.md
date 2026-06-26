@@ -1,23 +1,86 @@
-# CredentialVerificationServiceTest
+# CredentialVerificationServiceTest Class
 
 `ISTEST`
+
 ## Methods
-### `private static void testNullParameters()`
+### `testNullParameters()`
 
 `ISTEST`
-### `private static void testInvalidContact()`
 
-`ISTEST`
-### `private static void testInvalidContactCertificationName()`
+#### Signature
+```apex
+private static void testNullParameters()
+```
 
-`ISTEST`
-### `private static void testNoRecordFound()`
+#### Return Type
+**void**
 
-`ISTEST`
-### `private static void testValidContactCertification()`
-
-`ISTEST`
-### `private static void testNeedRenewalContactCertification()`
-
-`ISTEST`
 ---
+
+### `testInvalidContact()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void testInvalidContact()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `testInvalidContactCertificationName()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void testInvalidContactCertificationName()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `testNoRecordFound()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void testNoRecordFound()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `testValidContactCertification()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void testValidContactCertification()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `testNeedRenewalContactCertification()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void testNeedRenewalContactCertification()
+```
+
+#### Return Type
+**void**

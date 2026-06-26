@@ -5,7 +5,7 @@
 ## Introduction
 
 Apex Recipes is a library of concise, meaningful examples of code for common use cases utilizing best practices. They reflect enterprise patterns that can be utilized
-for real world solutions and should relevant to developers of all skill levels. The code is intended to reflect clarity while trying to maintain brevity. See the Table of Contents for installation options. We recommend using the [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli) and a scratch org for your initial deployment.
+for real world solutions and should be relevant to developers of all skill levels. The code is intended to reflect clarity while trying to maintain brevity. See the Table of Contents for installation options. We recommend using the [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli) and a scratch org for your initial deployment.
 
 <div>
    <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-explore-the-apex-recipes-sample-app/185b61248727a9711d31e2f54b62e230_badge.png" align="left" alt="Trailhead Badge" height="40px" width="40px"/>
@@ -14,78 +14,78 @@ for real world solutions and should relevant to developers of all skill levels. 
 
 ## Table of contents
 
--   [Installing Apex Recipes Using a Scratch Org](#installing-the-app-using-a-scratch-org): This is the recommended installation option. Use this option if you are a developer who wants to experience the app and the code.
+- [Installing Apex Recipes Using a Scratch Org](#installing-the-app-using-a-scratch-org): This is the recommended installation option. Use this option if you are a developer who wants to experience the app and the code.
 
--   [Installing Apex Recipes Using an Unlocked Package](#installing-the-app-using-an-unlocked-package): This option allows anybody to experience the sample app without installing a local development environment.
+- [Installing Apex Recipes Using an Unlocked Package](#installing-the-app-using-an-unlocked-package): This option allows anybody to experience the sample app without installing a local development environment.
 
--   [Installing Apex Recipes using a Developer Edition Org or a Trailhead Playground via the Salesforce CLI](#installing-the-app-using-a-developer-edition-org-or-a-trailhead-playground): Useful when tackling Trailhead Badges or if you want the app deployed to a more permanent environment than a Scratch org.
+- [Installing Apex Recipes using a Developer Edition Org or a Trailhead Playground via the Salesforce CLI](#installing-the-app-using-a-developer-edition-org-or-a-trailhead-playground-via-the-salesforce-cli): Useful when tackling Trailhead Badges or if you want the app deployed to a more permanent environment than a Scratch org.
 
--   [Optional installation instructions](#optional-installation-instructions)
+- [Optional installation instructions](#optional-installation-instructions)
 
 ## Installing the app using a Scratch Org
 
 1. Set up your environment. Follow the steps in the [Quick Start: Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/) Trailhead project. The steps include:
 
-    - Enable Dev Hub in your Trailhead Playground
-    - Install Salesforce CLI
-    - Install Visual Studio Code
-    - Install the Visual Studio Code Salesforce extensions
+   - Enable Dev Hub in your Trailhead Playground
+   - Install Salesforce CLI
+   - Install Visual Studio Code
+   - Install the Visual Studio Code Salesforce extensions
 
 1. If you haven't already done so, authorize with your hub org and provide it with an alias (**myhuborg** in the command below):
 
-    ```
-    sf org login web -d -a myhuborg
-    ```
+   ```
+   sf org login web -d -a myhuborg
+   ```
 
 1. Clone the apex-recipes repository:
 
-    ```
-    git clone https://github.com/trailheadapps/apex-recipes
-    cd apex-recipes
-    ```
+   ```
+   git clone https://github.com/trailheadapps/apex-recipes
+   cd apex-recipes
+   ```
 
 1. Create a scratch org and provide it with an alias (**apex-recipes** in the command below):
 
-    ```
-    sf org create scratch -d -f config/project-scratch-def.json -a apex-recipes
-    ```
+   ```
+   sf org create scratch -d -f config/project-scratch-def.json -a apex-recipes
+   ```
 
 1. Push the app to your scratch org:
 
-    ```
-    sf project deploy start
-    ```
+   ```
+   sf project deploy start
+   ```
 
 1. Assign the **Apex_Recipes** permission set to the default user:
 
-    ```
-    sf org assign permset -n Apex_Recipes
-    ```
+   ```
+   sf org assign permset -n Apex_Recipes
+   ```
 
 1. Assign the **Walkthroughs** permission set to the default user:
 
-    ```
-    sf org assign permset -n Walkthroughs
-    ```
+   ```
+   sf org assign permset -n Walkthroughs
+   ```
 
 1. Import Sample Data
 
-    ```
-    sf data tree import -p ./data/data-plan.json
-    sf data tree import -p ./data/data-plan2.json
-    ```
+   ```
+   sf data tree import -p ./data/data-plan.json
+   sf data tree import -p ./data/data-plan2.json
+   ```
 
 1. Execute the Anonymous Apex setup script
 
-    ```
-    sf apex run --file data/setup.apex
-    ```
+   ```
+   sf apex run --file data/setup.apex
+   ```
 
 1. Open the scratch org:
 
-    ```
-    sf org open
-    ```
+   ```
+   sf org open
+   ```
 
 1. In App Launcher, select the **Apex Recipes** app.
 
@@ -99,7 +99,7 @@ Make sure to start from a **brand-new environment** to avoid conflicts with prev
 
 1. Go to **Setup**, under **Platform Cache**, and click the "Request Trial Capacity" button. [Request a Platform Cache Trial](https://help.salesforce.com/articleView?id=data_platform_cache_trial.htm&type=5)
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tKf000000PhrfIAC) to install the Apex Recipes unlocked package in your org.
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tKf000000D7x9IAC) to install the Apex Recipes unlocked package in your org.
 
 1. Select **Install for All Users**
 
@@ -110,23 +110,23 @@ Make sure to start from a **brand-new environment** to avoid conflicts with prev
 
 1. (Optional) Load the sample Junction objects data:
 
-    - Click the **Setup Gear Icon**
-    - Click **Developer Console**
-    - Click **Debug**
-    - Click **Open Execute Anonymous Window**
-    - Enter: `DataFactoryForPackageInstalls.generateData();`
-    - Click **Execute**
+   - Click the **Setup Gear Icon**
+   - Click **Developer Console**
+   - Click **Debug**
+   - Click **Open Execute Anonymous Window**
+   - Enter: `DataFactoryForPackageInstalls.generateData();`
+   - Click **Execute**
 
 1. Add the Apex Recipes permission set to your user:
 
-    - Go to **Setup > Users > Permission Sets**.
-    - Click **Apex_Recipes**.
-    - Click **Manage Assignments**.
-    - Check your user and click **Add Assignments**.
+   - Go to **Setup > Users > Permission Sets**.
+   - Click **Apex_Recipes**.
+   - Click **Manage Assignments**.
+   - Check your user and click **Add Assignments**.
 
 1. In App Launcher, select the **Apex Recipes** app.
 
-    - If the app does not load, please double check that the Apex Recipes permission set active on your user.
+   - If the app does not load, please double check that the Apex Recipes permission set active on your user.
 
 ## Installing the App using a Developer Edition Org or a Trailhead Playground via the Salesforce CLI
 
@@ -137,52 +137,52 @@ Make sure to start from a brand-new environment to avoid conflicts with previous
 
 1. Clone this repository:
 
-    ```
-    git clone https://github.com/trailheadapps/apex-recipes
-    cd apex-recipes
-    ```
+   ```
+   git clone https://github.com/trailheadapps/apex-recipes
+   cd apex-recipes
+   ```
 
 1. Authorize with your Trailhead Playground or Developer Edition org and provide it with an alias (**mydevorg** in the command below):
 
-    ```
-    sf org login web -s -a mydevorg
-    ```
+   ```
+   sf org login web -s -a mydevorg
+   ```
 
 1. If you are setting up a Developer Edition: go to **Setup**, under **Platform Cache**, and click the "Request Trial Capacity" button. [Request a Platform Cache Trial](https://help.salesforce.com/articleView?id=data_platform_cache_trial.htm&type=5)
 
 1. Run this command in a terminal to deploy the app.
 
-    ```
-    sf project deploy start -d force-app
-    ```
+   ```
+   sf project deploy start -d force-app
+   ```
 
 1. Assign the `Apex_Recipes` permission set to the default user.
 
-    ```
-    sf org assign permset -n Apex_Recipes
-    ```
+   ```
+   sf org assign permset -n Apex_Recipes
+   ```
 
 1. Import Sample Data
 
-    ```
-    sf data tree import -p ./data/data-plan.json
-    sf data tree import -p ./data/data-plan2.json
-    ```
+   ```
+   sf data tree import -p ./data/data-plan.json
+   sf data tree import -p ./data/data-plan2.json
+   ```
 
 1. Execute the Anonymous Apex setup script
 
-    ```
-    sf apex run --file data/setup.apex
-    ```
+   ```
+   sf apex run --file data/setup.apex
+   ```
 
 1. If your org isn't already open, open it now:
 
-    ```
-    sf org open -o mydevorg
-    ```
+   ```
+   sf org open -o mydevorg
+   ```
 
 1. In App Launcher, select the **Apex Recipes** app.
-    - If the app does not load, please double check that the **Apex Recipes** permission set active on your user.
+   - If the app does not load, please double check that the **Apex Recipes** permission set active on your user.
 
 ## Optional Installation Instructions
 
